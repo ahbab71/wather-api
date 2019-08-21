@@ -14,3 +14,16 @@ btn.addEventListener('click',e=>{
         ${forecast.current.temp_c} Degree Celcius`
     })
 });
+
+function ahbab(e) {
+    //Parsen des "result" string
+    var actionResult = null;
+    if(typeof result === "string") {
+        actionResult = JSON.parse(result);
+    }
+    //Eingabefeld in Variable speichern
+    var myInput = null;
+    if(actionResult && actionResult.data) {
+        myInput = actionResult.data.myInput;
+    }
+}
